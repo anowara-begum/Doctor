@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #mobile-menu {
+            position: absolute;
+            width: 100%;
+            left: -100%;
+        }
+
+        #menu-toggle:checked~#mobile-menu {
+            left: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body class="">
+
+        <nav class=" px-5 lg:px-16 xl:px-20 py-10 flex justify-between items-center bg-[#F2F7FF] ">
+
+
+            <h1 class="text-cyan-400 text-4xl font-bold">Doctor</h1>
+
+            <label class="lg:hidden" for="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </label>
+
+            <ul class=" hidden lg:flex  space-x-16 text-[#3A8EF6]">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+
+
+            </ul>
+            <button class=" lg:flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 hidden">
+                <img src="./images/message-circle.png" alt="">
+                <p class="text-[#FFF]">Book Now</p>
+            </button>
+
+        </nav>
+
+        <!-- small mobile -->
+        <input class="hidden" type="checkbox" name="menu-toggle" id="menu-toggle">
+
+        <div id="mobile-menu" class="lg:hidden">
+            <ul class="space-y-5 text-[#3A8EF6] items-center text-center">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+
+
+            </ul>
+            <button class=" flex items-center bg-cyan-400 rounded-full px-3 py-2">
+                <img src="./images/message-circle.png" alt="">
+                <p class="text-[#FFF]">Book Now</p>
+            </button>
+        </div>
+        <section class="grid lg:grid-cols-2 px-5 lg:px-16 xl:px-20 py-10 bg-[#F2F7FF]">
+            <div class="mt-12 space-y-5">
+                <p class="text-[#00BFA5] text-2xl">Dr. Matthew Anderson</p>
+                <h1 class="text-4xl font-bold">A dedicated doctor <br>
+                    you can trust</h1>
+                <p class="text-[#6C87AE] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel,
+                    nunc nulla
+                    Metus ut.
+                </p>
+                <button class=" flex items-center bg-cyan-400 rounded-full px-3 py-2">
+                    <img src="./images/message-circle.png" alt="">
+                    <p class="text-[#FFF]">Book an appointment</p>
+                </button>
+
+
+            </div>
+            <div class="place-self-center">
+                <img src="./images/Group 9415.png" alt="">
+            </div>
+
+
+
+
+
+
+        </section>
+        <section
+            class="flex justify-around lg:flex-row flex-col-reverse gap-y-5 lg:gap-x-5 justify-around  px-5 lg:px-16 xl:px-20 py-10">
+            <button class=" flex items-center bg-cyan-400 rounded-lg px-3 py-2 gap-2">
+                <img src="./images/clock.png" alt="">
+                <div class="text-[#FFF] ">
+                    <h4 class="">24 hour service</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </button>
+            <button class=" flex items-center bg-cyan-400 rounded-lg px-3 py-2 gap-2">
+                <img src="./images/clock.png" alt="">
+                <div class="text-[#FFF]">
+                    <h4 class="">24 hour service</h4>
+                    <p class="text-[#FFF]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </button>
+            <button class=" flex items-center bg-cyan-400 rounded-lg px-3 py-2 gap-2">
+                <img src="./images/clock.png" alt="">
+                <div class="text-[#FFF]">
+                    <h4 class="">24 hour service</h4>
+                    <p class="text-[#FFF]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </button>
+
+            <!-- <button
+                class=" flex flex-col  md:flex-row  bg-cyan-400  rounded-lg p-5 w-64 h-24 items-center text-center gap-2 ">
+                <div class="w-1/4 flex justify-center mt-3">
+                    <img class=" " src="./images/clock.png" alt="">
+                </div>
+                <div class=" text-white">
+                    <h4 class="">24 hour service</h4>
+                    <p class=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </button>
+            <button
+                class=" flex flex-col  md:flex-row  bg-cyan-400  rounded-lg p-5 w-64 h-24 items-center text-center lg:gap-5  ">
+                <div class="w-1/4 flex justify-center mt-3">
+                    <img class=" " src="./images/clock.png" alt="">
+                </div>
+                <div class=" text-white">
+                    <h4 class="">24 hour service</h4>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </button>
+            <button
+                class=" flex flex-col  md:flex-row  bg-cyan-400  rounded-lg p-5 w-64 h-24 items-center text-center lg:gap-5  ">
+                <div class="w-1/4 flex justify-center mt-3">
+                    <img class=" " src="./images/clock.png" alt="">
+                </div>
+                <div class=" text-white">
+                    <h4 class="">24 hour service</h4>
+                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </button> -->
+
+
+
+        </section>
+        <section class="grid lg:grid-cols-2  px-5 lg:px-16 xl:px-20 py-10 mt-32 gap-24 ">
+            <img src="./images/Group 9420.png" alt="">
+
+            <div class="space-y-4">
+                <h4 class="text-[#00BFA5]">About me</h4>
+                <h3 class="text-2xl font-bold">A dedicated doctor with the core mission to help</h3>
+                <p class="text-[#00BFA5]">orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus
+                    at sed sagittis amet,
+                    sed. Tristique id
+                    nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis.
+                    Vulputate tortor
+                    tincidun.
+                </p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+
+            </div>
+        </section>
+        <section class="grid lg:grid-cols-2  px-5 lg:px-16 xl:px-20 py-10 mt-32 gap-24 bg-[#F2F7FF]  ">
+
+
+            <div class="space-y-4 mt-48 ">
+                <h4 class="text-[#00BFA5]">Services</h4>
+                <h3 class="text-2xl font-bold">Experienced in multiple medical practices</h3>
+                <p class="text-[#00BFA5]">orem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas
+                    viverra turpis habitant eu sociis fermentum
+                    felis.
+                </p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+            </div>
+            <div class="mt-14">
+                <img src="./images/Visual.png" alt="">
+            </div>
+        </section>
+        <section class="grid grid-cols-1 lg:grid-cols-3 px-5 lg:px-16 xl:px-20 py-10 gap-9 bg-[#F2F7FF]">
+            <div class="bg-white drop-shadow-2xl rounded-lg p-12 space-y-2 ">
+                <div class=" flex justify-center items-center rounded-lg  h-96">
+                    <img src="./images/Frame 9422.png" alt="">
+                </div>
+                <h4 class="text-2xl font-bold">General</h4>
+                <p class="text-[#6C87AE] text-base">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                    iTristique id
+                    nibh lobortis nunc</p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+
+            </div>
+            <div class="bg-white drop-shadow-2xl rounded-lg p-12 space-y-2 ">
+                <div class=" flex justify-center items-center rounded-lg h-96">
+                    <img src="./images/Frame 9422 (1).png" alt="">
+                </div>
+                <h4 class="text-2xl font-bold">General</h4>
+                <p class="text-[#6C87AE] text-base">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                    iTristique id
+                    nibh lobortis nunc</p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+
+            </div>
+            <div class="bg-white drop-shadow-2xl rounded-lg p-12 space-y-2 ">
+                <div class=" flex justify-center items-center rounded-lg h-96">
+                    <img src="./images/Frame 37589.png" alt="">
+                </div>
+                <h4 class="text-2xl font-bold">Pediatrics</h4>
+                <p class="text-[#6C87AE] text-base">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                    iTristique id
+                    nibh lobortis nunc</p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+
+            </div>
+            <div class="bg-white drop-shadow-2xl rounded-lg p-12 space-y-2 ">
+                <div class=" flex justify-center items-center rounded-lg h-96">
+                    <img src="./images/Frame 37590.png" alt="">
+                </div>
+                <h4 class="text-2xl font-bold">Nutritional</h4>
+                <p class="text-[#6C87AE] text-base">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                    iTristique id
+                    nibh lobortis nunc</p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+
+            </div>
+            <div class="bg-white drop-shadow-2xl rounded-lg p-12 space-y-2 ">
+                <div class=" flex justify-center items-center rounded-lg h-96">
+                    <img src="./images/Frame 37591.png" alt="">
+                </div>
+                <h4 class="text-2xl font-bold">Ophthalmology</h4>
+                <p class="text-[#6C87AE] text-base">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                    iTristique id
+                    nibh lobortis nunc</p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+
+            </div>
+            <div class="bg-white drop-shadow-2xl rounded-lg p-12 space-y-2 ">
+                <div class=" flex justify-center items-center rounded-lg h-96">
+                    <img src="./images/Frame 37592.png" alt="">
+                </div>
+                <h4 class="text-2xl font-bold">Orthopedics</h4>
+                <p class="text-[#6C87AE] text-base">Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet
+                    iTristique id
+                    nibh lobortis nunc</p>
+                <button class=" flex space-x-2  items-center bg-cyan-400 rounded-full px-3 py-2 ">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#FFF]">Book an Appointment</p>
+                </button>
+
+            </div>
+        </section>
+        <section class="lg:px-36 xl:px-60 py-10 space-y-5 ">
+            <p class="text-[#00BFA5] text-center text-2xl">Book an appointment</p>
+            <div class="text-[#FFF] rounded-lg bg-cyan-400 p-12 lg:p-24 lg:p-12 text-center ">
+                <h2 class=" text-white text-base  lg:text-2xl">Schedule a virtual or presential appointment today</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas egestas viverra turpis habitant
+                    eu
+                    sociis fermentum
+                    felis.</p>
+                <button
+                    class=" flex justify-center space-x-2  items-center bg-white rounded-full px-3 py-2 items-center text-center lg:ms-52it mt-5 "
+                    style="margin-left: rem;">
+                    <img src=" ./images/whatsapp.png" alt="">
+                    <p class="text-[#3A8EF6]">Book an Appointment</p>
+                </button>
+
+            </div>
+        </section>
+        <section class="px-5 lg:px-16 xl:px-20 py-10 space-y-5">
+            <h3 class="text-[#00BFA5] text-base lg:text-2xl text-center">Why Dr. Matthew Anderson?</h3>
+            <img class="place-self-center" src="./images/Rectangle 1075.png" alt="">
+            <h2 class=" text-2xl lg:text-4xl font-bold  text-center">A dedicated doctor with the core mission to help
+            </h2>
+            <p class=" text-[#6C87AE] text-base text-center">orem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quam proin nibh
+                cursus at sed sagittis amet, sed.
+                Tristique id
+                nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis.
+                Vulputate tortor
+                tincidun.
+            </p>
+            <div class="flex flex-col  md:flex-row gap-5 justify-around">
+                <button class=" flex items-center bg-cyan-400 rounded-lg px-3 py-2 gap-2">
+                    <img src="./images/clock.png" alt="">
+                    <p class="text-[#FFF]">
+                        +15 years of experience
+                    </p>
+                </button>
+                <button class=" flex items-center bg-cyan-400 rounded-lg px-3 py-2 gap-2">
+                    <img src="./images/check-circle.png" alt="">
+                    <p class="text-[#FFF]">
+                        Urgent 24 hour service
+                    </p>
+                </button>
+                <button class=" flex items-center bg-cyan-400 rounded-lg px-3 py-2 gap-2">
+                    <img src="./images/clock (1).png" alt="">
+                    <p class="text-[#FFF]">
+                        High quality care
+                    </p>
+                </button>
+
+            </div>
+
+        </section>
+        <section class="px-5 lg:px-16 xl:px-20 py-10 space-y-2 bg-[#F2F7FF] mt-32">
+
+            <h1 class="text-center text-4xl font-bold ">What our great customers say about Dr. Matthew Anderson</h1>
+            <p class="text-center text-base text-[#6C87AE]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod
+                tempor
+                incididunt ut labore et
+                dolore
+            </p>
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-5  ">
+                <div class=" md:flex-row drop-shadow-2xl bg-white  rounded-lg p-5   lg:gap-5 space-y-2 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore</p>
+                    <div class="flex gap-2  ">
+                        <div class="  ">
+                            <img class=" " src="./images/Ellipse 17.png" alt="">
+                        </div>
+                        <div class=" position ">
+                            <h4 class="text-[#00BFA5]">Samy White</h4>
+                            <p class="text-[]#6C87AE">Cardiology Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" md:flex-row drop-shadow-2xl bg-white  rounded-lg p-5   lg:gap-5 space-y-2 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore</p>
+                    <div class="flex gap-2  ">
+                        <div class="  ">
+                            <img class=" " src="./images/Ellipse 17 (1).png" alt="">
+                        </div>
+                        <div class=" position ">
+                            <h4 class="text-[#00BFA5]">Samy White</h4>
+                            <p class="text-[]#6C87AE">Cardiology Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" md:flex-row drop-shadow-2xl  bg-white rounded-lg p-5   lg:gap-5 space-y-2 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore</p>
+                    <div class="flex gap-2  ">
+                        <div class="  ">
+                            <img class=" " src="./images/Ellipse 17 (2).png" alt="">
+                        </div>
+                        <div class=" position ">
+                            <h4 class="text-[#00BFA5]">Samy White</h4>
+                            <p class="text-[]#6C87AE">Cardiology Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" md:flex-row drop-shadow-2xl bg-white rounded-lg p-5   lg:gap-5 space-y-2 ">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore</p>
+                    <div class="flex gap-2  ">
+                        <div class="  ">
+                            <img class=" " src="./images/Ellipse 17 (3).png" alt="">
+                        </div>
+                        <div class=" position ">
+                            <h4 class="text-[#00BFA5]">Samy White</h4>
+                            <p class="text-[]#6C87AE">Cardiology Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <footer class=" text-[#FFF] px-5 lg:px-16 xl:px-20 py-10 gap-5 bg-[#1678F2] ">
+            <div class="flex gap-8 ">
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <h1 class="text-2xl font-['sora'] ">Doctor</h1>
+                        <p>8 W. South St.Buford, GA 30518
+                            <br> 5Briarwood LaneVienna, VA 22180 RER
+                        </p>
+                    </div>
+                    <div class="flex space-x-5">
+                        <img src="./images/youtube.png" alt="">
+                        <img src="./images/facebook.png" alt="">
+                        <img src="./images/whatsapp.png" alt="">
+                    </div>
+                </div>
+                <div class="grid lg:grid-cols-3  gap-12 ">
+                    <ul>
+                        <li class="text-base font-['Poppins']">Company Info</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Bolg</li>
+                    </ul>
+                    <ul>
+                        <li class="text-base font-['Poppins']">Book</li>
+                        <li>Appointment</li>
+                    </ul>
+                    <ul>
+                        <li class="text-base font-['Poppins']">Contact</li>
+                        <li>+1 123456789</li>
+                        <li>remmcal@mail.com</li>
+                        <li>Phone: +1 12345678</li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+    </body>
+
+</html>
